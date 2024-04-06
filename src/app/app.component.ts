@@ -3,14 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular-Project';
+  loadedFeature = 'recipe';
 
-  loaded_feature = 'recipe';
-
-  onNavigate(feature: string){
-    this.loaded_feature = feature;
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
 }
